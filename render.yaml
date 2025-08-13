@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: odoo-crm
+    env: docker
+    dockerfilePath: ./Dockerfile
+    autoDeploy: false
+    port: 8069
+
+databases:
+  - name: odoo-db
+    type: postgres
+    plan: free
